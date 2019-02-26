@@ -1,0 +1,120 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my newsreader",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "bye",
+                        "exit",
+                        "quit",
+                        "thanks",
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "what can i ask ",
+                        "what does this skill do",
+                        "whats this skill about",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "thanks",
+                        "bbye",
+                        "stop",
+                        "bye",
+                        "exit",
+                        "quit"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewsIntent",
+                    "slots": [
+                        {
+                            "name": "topic",
+                            "type": "NewsTopic"
+                        }
+                    ],
+                    "samples": [
+                        "{topic}",
+                        "whats hot about {topic}",
+                        "whats going with {topic}",
+                        "tell me about {topic}",
+                        "Tell me whats in the news about {topic}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": [
+                        "no thanks",
+                        "thanks",
+                        "nopes",
+                        "no",
+                        "naah",
+                        "nope"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "yep",
+                        "hell yeah",
+                        "yeah",
+                        "yes"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "NewsTopic",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "pulwama"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "elections"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "usa"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pakistan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "india"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "obama"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
